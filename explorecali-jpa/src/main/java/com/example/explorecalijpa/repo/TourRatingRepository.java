@@ -14,6 +14,8 @@ import com.example.explorecalijpa.model.TourRating;
  *
  * Created by Mary Ellen Bowman
  */
+//I do not want this repository to be exposed to spring data rest, 
+//so i set expported equals false in the repository rest resource annotation
 @RepositoryRestResource(exported = false)
 public interface TourRatingRepository extends JpaRepository<TourRating, Integer>, CrudRepository<TourRating, Integer> {
 
